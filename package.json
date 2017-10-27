@@ -1,0 +1,22 @@
+{
+  "name": "simple_rest_api_with_express",
+  "version": "1.0.0",
+  "description": "simple REST API with express.js",
+  "main": "sever.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "REST",
+    "node.js",
+    "express.js"
+  ],
+  "author": "Ajantha Bandara",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.2"
+  },
+  "devDependencies": {
+    "morgan": "^1.9.0"
+  }
+}
