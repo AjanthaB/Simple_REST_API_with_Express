@@ -1,4 +1,10 @@
-const express = require("./express");
+/**
+ * @author : Ajantha Bandara
+ * @copyright: 2018, IronNode Labs 
+ */
+
+const express = require("./express"),
+  config = require("./config").get(process.env.NODE_ENV);
 
 /**
  * @desc - create an instance of exress and invoke the callback
@@ -14,7 +20,7 @@ module.exports.init = (callback) => {
 module.exports.start = () => {
   const _this = this;
   _this.init((app) => {
-    app.listen(5000, (err) => {
+    app.listen(config.port, (err) => {
       if (err) console.log(err);
       console.log("Application is running on localhost port:5000");
     })
